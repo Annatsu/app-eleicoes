@@ -38,7 +38,8 @@ const App = () => (
                         path={r.url}
                         render={() => {
                             document.title = `${r.title} | ${APP_PREFIX}`;
-                            return r.component;
+                            const Component = r.component;
+                            return <Component />;
                         }}
                         exact={i === 0} />
                 ))
