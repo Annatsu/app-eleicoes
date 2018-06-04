@@ -18,18 +18,13 @@ import routes from './routes';
 const APP_PREFIX = 'Eleições 2018';
 
 
-const HackyPhone = styled('div') `
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 375px;
-    height: 667px;
+const Container = styled('div') `
+    padding: 10px;
 `;
 
 
 const App = () => (
-    <HackyPhone>
+    <Container>
         <Switch>
             {
                 routes.map((r, i) => (
@@ -45,7 +40,7 @@ const App = () => (
                 ))
             }
         </Switch>
-    </HackyPhone>
+    </Container>
 );
 
 
