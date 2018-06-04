@@ -18,7 +18,15 @@ import routes from './routes';
 const APP_PREFIX = 'Eleições 2018';
 
 
-const Container = styled('div') `
+const Container = styled(({ children, className, ...rest }) => (
+    <div className={`container ${className}`} {...rest}>
+        <div className="row">
+            <div className="col-xs-12">
+                {children}
+            </div>
+        </div>
+    </div>
+)) `
     padding: 10px;
 `;
 
