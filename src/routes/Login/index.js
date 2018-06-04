@@ -2,14 +2,14 @@
 import React from 'react';
 
 
+import Panel, { PanelTitle } from '../../components/Panel';
+
+
 const Login = () => (
-    <div className="container">
-        <div className="row">
-            <div className="col-xs-12">
-                <p>title</p>
-            </div>
-        </div>
-    </div>
+    <Panel>
+        <PanelTitle>Entre com sua conta</PanelTitle>
+        <p>Teste</p>
+    </Panel>
 );
 
 
