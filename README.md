@@ -8,9 +8,9 @@ React, React Router, Emotion.
 
 ####  Ambiente dev
 Rode em um terminal:  
-`npm|yarn install` para instalar as dependências.
-`npm run dev` para executar o app.
+`[npm|yarn] install` para instalar as dependências.
+`[npm|yarn] start` para executar o app.
 
 #### Produção
 Para gerar uma build:
-`npm run package|npm run build`
+`[npm run|yarn] build`
